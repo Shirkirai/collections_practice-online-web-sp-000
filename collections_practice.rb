@@ -12,9 +12,9 @@ def sort_array_char_count(array)
   array.sort do |a, b|
     if a <=> b
       0
-    elsif a.length <= b.length
+    elsif a.length < b.length
       -1
-    elsif a.length >= b.length
+    elsif a.length > b.length
       1
     end
   end
